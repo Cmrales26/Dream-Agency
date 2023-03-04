@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;700&display=swap');
+*{
+    font-family: 'Hind Vadodara';
+    margin: 0;
+    padding: 0;
+}
+
+/* LO QUE HACEMOS */
+.fondo_lo_que_hacermos{
+    position: absolute;
+    background: url("../img/Lo_que_hacemos/Bg_1.svg");
+    background-size: cover;
+    width: 100%;
+    height: 652px;
+}
+.titulo_LoQueHacemos{
+    position: relative;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 92px;
+    color: #331B3B;
+}
+span{
+    position: relative;
+    z-index: 4;
+}
+.underNegocio::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    right: 0;
+    margin-right: -22px;
+    margin-bottom: 9%;
+    bottom: 0;
+    border: 5px solid #fdc221;
+    width: 100%;
+}
+.card{
+    position: relative;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background-color: #FFFF;
+    width: 260px;
+    height: 170px;
+    padding: 1% 2%;
+}
+.container_cards_LoQueHacemos{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-right: 8%;
+    gap: 40px;
+}
+.icon img{
+    border-radius: 10px;
+}
+.icon1 img{
+    background:#FFDED4;
+    border-radius: 10px;
+    padding: 2%;
+}
+.icon2 img{
+    background:#FFEED4;
+    border-radius: 10px;
+    padding: 2%;
+}
+.icon3 img{
+    background:#D4F0FF;
+    border-radius: 10px;
+    padding: 2%;
+}
+.card_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 13px;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    color: #331B3B;
+}
+.card_info{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3%;
+    letter-spacing: 0.02em;
+    color: rgba(51, 27, 59, 0.66);
+}
+
+/* ACERCA DE NOSOTROS */
+.acercaNosotros{
+    margin-top: 5%;
+}
+.contenedor_acercaNosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.TituloacercaNosotros{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #331B3B;
+}
+.TextoacercaNosotros{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    margin-top: 5%;
+    color: rgba(51, 27, 59, 0.66);
+}
+
+.BotonacercaNosotros{
+    cursor: pointer;
+    width: 207px;
+    background: #331B3B;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-top: 5%;
+    text-align: center;
+}
+.BotonacercaNosotros a{
+    color:  white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.img_acercaNosotros{
+    width: 50%
+}
+.img_acercaNosotros img{
+    width: 100%;
+    height: 50%;
+}
+.info_acercaNosotros{
+    padding: 15px;
+    width: 500px;
+}
+.underNosotros::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    right: 0;
+    margin-right: -50px;
+    margin-bottom: 9%;
+    bottom: 0;
+    border: 3px solid #fdc221;
+    width: 40%;
+}
+
+
+/* TRABAJOS RECIENTES */
+.fondo_trabajosRecientes{
+    position: absolute;
+    background-image: url("../img/TrabajosRecientes/bg.svg");
+    background-color: white;
+    background-size: cover;
+    width: 85%;
+    height: 673px;
+    margin-left: 15%;
+}
+
+.head_trabajosRecientes{
+    position: relative;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(
+        500px,
+        1fr
+    ));
+    align-items: center;
+}
+.titulo_trabajosRecientes{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    color: #331B3B;
+}
+.Texto_trabajosRecientes{
+    margin-top: 4%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.3%;
+    letter-spacing: 0.02em;
+    color: #331B3B;
+}
+.ContenidoTrabajosRecientes{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(
+        419px,
+        1fr
+    ));
+    gap: 40px;
+}
+.trabajosrecientes_card{
+    width: 350px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+}
+.imagentrabajoR img{
+    width: 100%;
+}
+.card1tr{
+    justify-self: end;
+}
+
+.card2tr{
+    justify-self: start;
+}
+.trabajosRecientes_foot{
+    margin-top: 6%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.nameTrabajoR{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 146.3%;
+    color: #331B3B;
+}
+.botonTrabajoR{
+    text-align: center;
+    display: flex;
+    border: 1px solid #331B3B;
+    padding: 0% 6%;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonTrabajoR a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 146.3%;
+    color: #331B3B;
+}
+.underExpertos::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-right: -50px;
+    bottom: 0;
+    border: 3px solid #fdc221;
+    width: 100%;
+}
