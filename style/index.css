@@ -315,7 +315,7 @@ span {
   }
   .lo_que_hacemos {
     background-color: #ecf7ff;
-    border-bottom-right-radius: 24%;
+    border-bottom-right-radius: 450px;
     padding-bottom: 10%;
   }
   .acercaNosotros {
@@ -346,7 +346,7 @@ span {
     width: initial;
   }
   .trabajosRecientes {
-    border-top-left-radius: 24%;
+    border-top-left-radius: 450px;
     background-color: rgba(255, 222, 212, 0.3);
   }
 }
