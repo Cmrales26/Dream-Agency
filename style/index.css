@@ -11,7 +11,7 @@ body {
 /* LO QUE HACEMOS */
 .fondo_lo_que_hacermos {
   position: absolute;
-  background: url("../img/Lo_que_hacemos/Bg_1.svg");
+  background: url("../img/Lo_que_hacemos/Bg_1.png");
   background-size: cover;
   width: 100%;
   height: 670px;
@@ -102,6 +102,7 @@ span {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 .TituloacercaNosotros {
   font-style: normal;
@@ -137,7 +138,6 @@ span {
 }
 .img_acercaNosotros img {
   width: 100%;
-  height: 50%;
 }
 .info_acercaNosotros {
   padding: 15px;
@@ -158,7 +158,7 @@ span {
 /* TRABAJOS RECIENTES */
 .fondo_trabajosRecientes {
   position: absolute;
-  background-image: url("../img/TrabajosRecientes/bg.svg");
+  background-image: url("../img/TrabajosRecientes/bg.png");
   background-color: white;
   background-size: cover;
   width: 85%;
