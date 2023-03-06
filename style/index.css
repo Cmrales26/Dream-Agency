@@ -521,9 +521,10 @@ span{
   position: absolute;
   bottom: 0;
   right: 0;
+  margin-right: 15%;
   margin-bottom: 10%;
   border: 5px solid #FDC221;
-  width: 90%;
+  width: 76%;
 }
 .gion{
   color: #FDC221;
@@ -550,10 +551,6 @@ span{
   font-size: 16px;
   color: #331B3B;
   padding: 35px 35px 15px 35px;
-}
-.h4{
-  background-color: orange;
-  text-align: left;
 }
 .titulotestimonios{
   text-align: center;
@@ -632,6 +629,9 @@ span{
   .BotonacercaNosotros a{
     font-size: 35px;
   }
+  .fondo_trabajosRecientes{
+    height: 1100px !important;
+  }
 
   .titulo_trabajosRecientes{
     font-size: 55px;
@@ -641,6 +641,7 @@ span{
   }
   .trabajosrecientes_card {
     width: 600px;
+    height: fit-content;
   }
   .nameTrabajoR{
     font-size: 30px;
@@ -650,6 +651,22 @@ span{
   }
   .fondo_trabajosRecientes{
     height: 1000px;
+  }
+  .titulotestimonios{
+    font-size: 65px;
+    line-height: 90px;
+  }
+  .tarjeta{
+    width: 30%;
+  }
+  .Parrafo1{
+    font-size: 30px;
+  }
+  .gion{
+    font-size: 60px;
+  }
+  .Ref_tes{
+    font-size: 40px;
   }
   
 }
@@ -711,6 +728,9 @@ span{
   .fondo_trabajosRecientes {
     width: 1030px;
     margin-left: 0%;
+  }
+  .tarjeta{
+    width: 40%;
   }
 }
 
@@ -805,6 +825,18 @@ span{
   .trabajosRecientes {
     border-top-left-radius: 450px;
     background-color: rgba(255, 222, 212, 0.3);
+  }
+  .container-card{
+    align-items: center;
+  }
+  .ContenidoTrabajosRecientes{
+    padding-bottom: 10%;
+  }
+  .tarjeta{
+    width: 70%;
+  }
+  .tarjeta2{
+    margin-top: 4%;
   }
 }
 
@@ -913,5 +945,12 @@ span{
 
   .Texto_trabajosRecientes {
     font-size: 14px;
+  }
+  .titulotestimonios{
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .Parrafo1{
+    font-size: 16px;
   }
 }
