@@ -64,7 +64,34 @@ ul a {
   bottom: 0;
   border: 1px solid #fdc221;
   width: 50%;
+  transition: all 0.25s ease-out;
 }
+.underhome:hover:after {
+  width: 100%;
+}
+
+.undernav::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-bottom: 5%;
+  bottom: 0;
+  border: 1px solid #fdc221;
+  width: 100%;
+  transform: scaleX(0);transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.undernav:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.img-r{
+  transition: all .25s ease-out;
+}
+.img-r:hover{
+  scale: 1.05;
+}
+
 
 .titulo_nav {
   font-family: 'Playfair Display';
