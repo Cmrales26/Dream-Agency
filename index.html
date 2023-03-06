@@ -5,11 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/index.css">
     <title>Landing Page</title>
 </head>
 
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li class="home"> <a href="#"><span class="underhome">Home</span></a> </li>
+                <li> <a href="#acercaNosotros">Nosotros</a> </li>
+                <li> <a href="#sercicios">Servicio</a> </li>
+                <li> <a href="#footer">Contacto</a> </li>
+            </ul>                   
+        </nav>
+        <div class="titulo_nav">
+            <h3>Dream Agency</h3>
+        </div>
+         <div class="imagen_nav">
+            <a href="#">
+                <img class="img-r" src="img/nav/Facebook.svg" alt="">
+            </a>
+            <a href="#">
+                <img class="img-r" src="img/nav/Instagram.svg" alt="">
+            </a>
+            <a href="#">
+                <img class="img-r" src="img/nav/Linked.svg" alt="">
+            </a>
+         </div>
+    </header>
+    
+    <section class="Home">
+        <div class="contenedor_home">
+            <div class="contenido_home">
+                <div class="titulo_home">
+                   <h1>Te ayudamos</h1>
+                   <h1 style="font-weight: normal;">a hacer crecer tu <span class="tu_negocio">  negocio</span></h1>
+                </div>
+                <div class="texto_home">
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="boton_home">
+                   <a href="#">GET STARTED</a>
+                </div>
+            </div>
+            <div class="imagen_home">
+               <img src="img/Homeimg/homeimg.png" alt="imghome">
+            </div>
+        </div>
+    </section>
     <section class="lo_que_hacemos">
         <div class="fondo_lo_que_hacermos"></div>
         <div class="contenedor_LoQueHacemos">
@@ -54,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="acercaNosotros">
+    <section class="acercaNosotros" id="acercaNosotros">
         <div class="contenedor_acercaNosotros">
             <div class="img_acercaNosotros">
                 <img src="./img/AcercaNosotros/AcercaNosotros.png" alt="AcercaNosotros">
@@ -77,7 +123,7 @@
             </div>
         </div>
     </section>
-    <section class="trabajosRecientes">
+    <section class="trabajosRecientes" id="sercicios">
         <div class="fondo_trabajosRecientes"></div>
         <div class="head_trabajosRecientes">
             <div class="titulo_trabajosRecientes">

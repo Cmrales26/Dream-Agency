@@ -1,14 +1,174 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
 * {
-  font-family: "Hind Vadodara";
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
+  font-family: "Hind Vadodara";
+}
+
+.header {
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hamburguer {
+  display: none;
+}
+
+ul {
+  padding-left: 5%;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul a {
+  font-family: 'Hind Vadodara';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #331B3B;
+  text-decoration: none;
+}
+
+.home a {
+  font-weight: 600;
+}
+.imagen_nav{
+  z-index: 9999;
+}
+.imagen_nav a{
+  text-decoration: none;
+  color: #331B3B;
+}
+
+.underhome::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-bottom: 5%;
+  bottom: 0;
+  border: 1px solid #fdc221;
+  width: 50%;
+}
+
+.titulo_nav {
+  font-family: 'Playfair Display';
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #331B3B;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.titulo_nav {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #331B3B;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor_home {
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenido_home {
+  position: relative;
+  margin-left: 5%;
+  width: 38%;
+}
+
+.titulo_home {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 53px;
+  color: #331b3b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 160%;
+  margin-bottom: 5%;
+}
+
+.texto_home {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 146.3%;
+  letter-spacing: 0.02em;
+  color: rgba(51, 27, 59, 0.66);
+  margin-bottom: 5%;
+}
+
+.tu_negocio::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-bottom: 5%;
+  /* margin-left: -30% ; */
+  bottom: 0;
+  border: 8px solid #fdc221;
+  width: 90%;
+}
+
+.boton_home {
+  width: fit-content;
+  padding: 3% 10%;
+  /* height: 55px; */
+  background: #331B3B;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s;
+}
+
+.boton_home:hover {
+  scale: 1.05;
+}
+
+.boton_home a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.imagen_home {
+  width: 45%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.imagen_home img {
+  width: 100%;
 }
 
 /* LO QUE HACEMOS */
+.lo_que_hacemos {
+  margin-top: 10%;
+}
+
 .fondo_lo_que_hacermos {
   position: absolute;
   background: url("../img/Lo_que_hacemos/Bg_1.png");
@@ -16,6 +176,7 @@ body {
   width: 100%;
   height: 670px;
 }
+
 .titulo_LoQueHacemos {
   position: relative;
   font-style: normal;
@@ -24,10 +185,12 @@ body {
   padding-top: 92px;
   color: #331b3b;
 }
+
 span {
   position: relative;
   z-index: 4;
 }
+
 .underNegocio::after {
   z-index: -1;
   content: "";
@@ -39,6 +202,7 @@ span {
   border: 5px solid #fdc221;
   width: 100%;
 }
+
 .card {
   position: relative;
   box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
@@ -47,7 +211,13 @@ span {
   width: 260px;
   height: 170px;
   padding: 1% 2%;
+  transition: .2s all ease-in-out;
 }
+
+.card:hover {
+  scale: 1.05;
+}
+
 .container_cards_LoQueHacemos {
   margin-top: 3%;
   display: flex;
@@ -56,24 +226,29 @@ span {
   margin-right: 10%;
   gap: 40px;
 }
+
 .icon img {
   border-radius: 10px;
 }
+
 .icon1 img {
   background: #ffded4;
   border-radius: 10px;
   padding: 2%;
 }
+
 .icon2 img {
   background: #ffeed4;
   border-radius: 10px;
   padding: 2%;
 }
+
 .icon3 img {
   background: #d4f0ff;
   border-radius: 10px;
   padding: 2%;
 }
+
 .card_title {
   font-style: normal;
   font-weight: 700;
@@ -83,6 +258,7 @@ span {
   text-transform: uppercase;
   color: #331b3b;
 }
+
 .card_info {
   font-style: normal;
   font-weight: 300;
@@ -94,8 +270,9 @@ span {
 
 /* ACERCA DE NOSOTROS */
 .acercaNosotros {
-  margin-top: 5%;
+  margin-top: 10%;
 }
+
 .contenedor_acercaNosotros {
   position: relative;
   display: flex;
@@ -104,12 +281,14 @@ span {
   align-items: center;
   gap: 40px;
 }
+
 .TituloacercaNosotros {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   color: #331b3b;
 }
+
 .TextoacercaNosotros {
   font-style: normal;
   font-weight: 400;
@@ -127,22 +306,32 @@ span {
   padding: 20px 10px;
   margin-top: 5%;
   text-align: center;
+  transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s;
 }
+
+.BotonacercaNosotros:hover {
+  scale: 1.05;
+}
+
 .BotonacercaNosotros a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .img_acercaNosotros {
   width: 50%;
 }
+
 .img_acercaNosotros img {
   width: 100%;
 }
+
 .info_acercaNosotros {
   padding: 15px;
   width: 500px;
 }
+
 .underNosotros::after {
   z-index: -1;
   content: "";
@@ -173,6 +362,7 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   align-items: center;
 }
+
 .titulo_trabajosRecientes {
   font-style: normal;
   font-weight: 700;
@@ -180,6 +370,7 @@ span {
   letter-spacing: -0.01em;
   color: #331b3b;
 }
+
 .Texto_trabajosRecientes {
   margin-top: 4%;
   font-style: normal;
@@ -189,6 +380,7 @@ span {
   letter-spacing: 0.02em;
   color: #331b3b;
 }
+
 .ContenidoTrabajosRecientes {
   position: relative;
   display: grid;
@@ -197,6 +389,7 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(419px, 1fr));
   gap: 40px;
 }
+
 .trabajosrecientes_card {
   width: 350px;
   height: 300px;
@@ -205,9 +398,11 @@ span {
   border-radius: 10px;
   padding: 20px;
 }
+
 .imagentrabajoR img {
   width: 100%;
 }
+
 .card1tr {
   justify-self: end;
 }
@@ -215,12 +410,14 @@ span {
 .card2tr {
   justify-self: start;
 }
+
 .trabajosRecientes_foot {
   margin-top: 6%;
   display: flex;
   align-self: center;
   justify-content: space-between;
 }
+
 .nameTrabajoR {
   font-style: normal;
   font-weight: 700;
@@ -228,6 +425,7 @@ span {
   line-height: 146.3%;
   color: #331b3b;
 }
+
 .botonTrabajoR {
   text-align: center;
   display: flex;
@@ -236,6 +434,7 @@ span {
   border-radius: 50px;
   justify-content: center;
   align-items: center;
+  transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s;
 }
 
 .botonTrabajoR a {
@@ -246,6 +445,11 @@ span {
   line-height: 146.3%;
   color: #331b3b;
 }
+
+.botonTrabajoR:hover {
+  scale: 1.02;
+}
+
 .underExpertos::after {
   z-index: -1;
   content: "";
@@ -256,31 +460,52 @@ span {
   margin-left: -5%;
   border: 4px solid #fdc221;
   width: 40%;
+  transition: width 1s ease-in-out;
+}
+
+
+.underExpertos:hover:after {
+
+  width: 90%;
 }
 
 /* Media query's NM */
 
 /* small Laptop */
 @media screen and (max-width: 1065px) {
+
+  .titulo_home {
+    font-size: 35px;
+  }
+
+  .imagen_home {
+    width: 50%;
+  }
+
   .fondo_lo_que_hacermos {
     width: 1345px;
     margin-left: -30%;
   }
+
   .container_cards_LoQueHacemos {
     align-items: center;
     justify-content: center;
   }
+
   .card {
     width: 230px;
     height: 200px;
     max-height: fit-content;
   }
+
   .acercaNosotros {
     margin-top: 20%;
   }
+
   .contenedor_acercaNosotros {
     gap: 40px;
   }
+
   .img_acercaNosotros {
     display: flex;
     /* border: 1px solid blue; */
@@ -288,15 +513,18 @@ span {
     align-items: center;
     justify-content: center;
   }
+
   .img_acercaNosotros img {
     /* border: 1px solid red; */
     width: 100%;
     height: 40%;
   }
+
   .info_acercaNosotros {
     padding: 15px;
     width: 40%;
   }
+
   .fondo_trabajosRecientes {
     width: 1030px;
     margin-left: 0%;
@@ -305,89 +533,159 @@ span {
 
 /* Vista Tableta */
 @media screen and (max-width: 950px) {
+  .imagen_home {
+    display: none;
+  }
+
+  .contenido_home {
+    /* margin-top: 10%; */
+    width: 100%;
+  }
+
+  .titulo_home {
+    width: 70%;
+  }
+
   .titulo_LoQueHacemos {
     padding-top: 10%;
   }
+  .imagen_nav{
+    display: none;
+  }
+  .header {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(
+      300px,
+      1fr
+    ));
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 5%;
+  }
+  ul{
+    padding-left: 0;
+    padding-top: 7%;
+  }
+  .navbar{
+    grid-row: 2;
+  }
+
   .fondo_lo_que_hacermos {
     background-image: none;
     width: initial;
     margin-left: initial;
   }
+
   .lo_que_hacemos {
     background-color: #ecf7ff;
     border-bottom-right-radius: 450px;
     padding-bottom: 10%;
   }
+
   .acercaNosotros {
     margin-top: 0;
   }
+
   .container_cards_LoQueHacemos {
     padding: 5%;
     margin: initial;
   }
+
   .titulo_LoQueHacemos {
     text-align: left;
     padding-left: 10%;
   }
+
   .card {
     width: 270px;
     height: 200px;
   }
+
   .img_acercaNosotros {
     display: none;
   }
+
   .info_acercaNosotros {
     width: 100%;
     padding: 10%;
     text-align: justify;
   }
+
   .fondo_trabajosRecientes {
     background-image: none;
     width: initial;
   }
+
   .trabajosRecientes {
     border-top-left-radius: 450px;
     background-color: rgba(255, 222, 212, 0.3);
   }
 }
+
 @media screen and (max-width: 882px) {
+
   .card1tr,
   .card2tr {
     justify-self: center;
   }
+
   .trabajosrecientes_card {
     width: 70%;
     height: fit-content;
   }
+
   .ContenidoTrabajosRecientes {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width:642px) {
+  .titulo_home{
+    width: 80%;
+  }
+}
 
 /* Vista Celulares */
-@media screen and (max-width: 466px) {
+@media screen and (max-width: 522px) {
   .head_trabajosRecientes {
     display: flex;
     flex-direction: column;
   }
+
   .lo_que_hacemos,
   .trabajosRecientes {
     border-radius: 0;
   }
+
   .card {
     width: 90%;
     height: fit-content;
     padding: 10%;
   }
+
   .trabajosRecientes_foot {
     flex-wrap: wrap;
   }
+
   .botonTra2 {
     margin: 5% auto;
     padding: 3% 10%;
   }
+  .titulo_home{
+    font-size: 20px;
+  }
+  .tu_negocio::after{
+    border: 3px solid #fdc221;
+  }
+  .texto_home{
+    font-size: 14px;
+    text-align: justify;
+    padding-right: 10%;
+  }
+
   .titulo_trabajosRecientes {
     font-size: 20px;
   }
@@ -395,29 +693,37 @@ span {
   .titulo_LoQueHacemos {
     font-size: 19px;
   }
+
   .underNegocio::after {
     border: 3px solid #fdc221;
   }
+
   .TituloacercaNosotros {
     font-size: 20px;
   }
+
   .underNosotros::after {
     margin-right: -18px;
     border: 3px solid #fdc221;
   }
+
   .TextoacercaNosotros {
     font-size: 14px;
   }
+
   .BotonacercaNosotros {
     margin: 10% auto;
     padding: 10px 5px;
   }
+
   .head_trabajosRecientes {
     align-items: start;
   }
+
   .titulo_trabajosRecientes {
     font-size: 20px;
   }
+
   .Texto_trabajosRecientes {
     font-size: 14px;
   }
