@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth;
 }
+.contacto-tb-m{
+  display: none;
+}
 
 body {
   overflow-x: hidden;
@@ -561,10 +564,14 @@ footer {
   background-color: black;
   border-radius: 0px 158px 0px 0px;
 }
+.rede_footer{
+  display: none;
+}
 
 .containerflex {
   padding: 50px 66px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 230px;
 }
@@ -572,7 +579,7 @@ footer {
 .container-parrafo {
   font-family: 'Hind Vadodara';
   font-size: 16px;
-  flex-basis: 33%;
+  width: 33%;
   color: white;
 }
 
@@ -774,6 +781,19 @@ textarea {
 
 
 /* small Laptop */
+@media screen and (max-width: 1250px) {
+  .containerflex{
+    gap: 2%;
+    justify-content: flex-start;
+  }
+  .container-parrafo{
+    width: 45%;
+    font-size: 12px;
+  }
+  .container-formulario{
+    width: 19%;
+  }
+}
 @media screen and (max-width: 1065px) {
   .titulo_home {
     font-size: 35px;
@@ -833,7 +853,6 @@ textarea {
   .tarjeta{
     width: 40%;
   }
-  
 }
 
 /* Vista Tableta */
@@ -940,6 +959,43 @@ textarea {
   .tarjeta2{
     margin-top: 4%;
   }
+  .contacto{
+    display: none;
+  }
+  .contacto-tb-m{
+    display: initial;
+  }
+  .rede_footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .socialfooter{
+    margin-bottom: 15%;
+    display: flex;
+  }
+  .containerflex{
+    display: grid;
+    grid-template-columns: repeat(10, minmax(
+      3px,
+      1fr
+    ));
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .container-parrafo{
+    width: 100%;
+    grid-column: 1/6;
+  }
+  .rede_footer{
+    grid-column: 7/10;
+  }
+  .container-formulario{
+    grid-row: 2;
+    grid-column: 1/5;
+    justify-self: center;
+  }
+  .container2 h4, .container3 h4{
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 882px) {
@@ -958,16 +1014,30 @@ textarea {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .container-formulario{
+    grid-column: 1;
+  }
 }
 
 @media screen and (max-width: 642px) {
   .titulo_home {
     width: 80%;
   }
+  .container2 h4, .container3 h4{
+    font-size: 12px;
+  }
+  .containerflex{
+    padding: 5% 5% 10% 5%;
+  }
+  .facebookft img,
+  .Linkedft img,
+  .Instagramft img{
+    width: 100%;
+}
 }
 
 /* Vista Celulares */
-@media screen and (max-width: 522px) {
+@media screen and (max-width: 530px) {
   .head_trabajosRecientes {
     display: flex;
     flex-direction: column;
