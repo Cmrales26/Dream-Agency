@@ -556,6 +556,108 @@ span{
   text-align: center;
 }
 
+footer {
+  margin-top: 5%;
+  background-color: black;
+  border-radius: 0px 158px 0px 0px;
+}
+
+.containerflex {
+  padding: 50px 66px;
+  display: flex;
+  justify-content: center;
+  gap: 230px;
+}
+
+.container-parrafo {
+  font-family: 'Hind Vadodara';
+  font-size: 16px;
+  flex-basis: 33%;
+  color: white;
+}
+
+.parrafo h2 {
+  font-size: 36px;
+  font-family: "Playfair Display";
+  margin-bottom: 4%;
+}
+
+h4 {
+  color: white;
+  margin-top: 4%;  
+}
+
+.container-formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  border: none;
+  padding: 5%;
+  width: 210px;
+  margin: 4% 0;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+  color: #9F9F9F;
+}
+
+textarea {
+  resize: none;
+}
+
+#Send {
+  border: none;
+  cursor: pointer;
+  background-color: #FE9A22;
+  color: white;
+  width: 235px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  transition: all .2s ease-in-out;
+}
+#Send:hover{
+  scale: 1.03;
+}
+#ingresapais{
+  margin-bottom: 15%;
+}
+.container2, .container3{
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  font-family: 'Poppins';
+}
+.container3{
+  margin-top: 5%;
+}
+.container2 h4, .container3 h4{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  margin-top: 0;
+}
 /* Media query's NM */
 
 
@@ -668,7 +770,6 @@ span{
   .Ref_tes{
     font-size: 40px;
   }
-  
 }
 
 
@@ -732,6 +833,7 @@ span{
   .tarjeta{
     width: 40%;
   }
+  
 }
 
 /* Vista Tableta */
