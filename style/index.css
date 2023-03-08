@@ -687,6 +687,10 @@ textarea {
   margin-top: 0;
 }
 
+.parrafo a{
+  text-decoration: none;
+}
+
 /* Media query's NM */
 
 
