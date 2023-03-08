@@ -958,7 +958,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1065px) {
+@media screen and (max-width: 1080px) {
   .titulo_home {
     font-size: 35px;
   }
@@ -1013,6 +1013,7 @@ textarea {
   .fondo_trabajosRecientes {
     width: 1030px;
     margin-left: 0%;
+    height: 750px;
   }
 
   .tarjeta {
