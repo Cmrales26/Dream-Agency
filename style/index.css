@@ -877,7 +877,68 @@ textarea {
   .tel h4, .mai h4{
     font-size: 30px;
   }
-
+}
+@media only screen and (max-width: 2050px) and (min-width: 1441px)  {
+  .tarjeta{
+    width: 30%;
+  }
+  .Parrafo1, .Ref_tes, .gion{
+    font-size: 26px;
+  }
+  .fondo_trabajosRecientes{
+    height: 850px;
+  }
+  .titulo_trabajosRecientes,
+  .titulotestimonios,
+  .titulo_LoQueHacemos, 
+  .TituloacercaNosotros{
+    font-size: 40px ;
+  }
+  .Texto_trabajosRecientes, 
+  .TextoacercaNosotros, 
+  .card_info, 
+  .texto_home{
+    font-size: 25px;
+  }
+  .BotonacercaNosotros a, .boton_home a, .botonTrabajoR a, .navbar a{
+    font-size: 20px;
+  }
+  .trabajosrecientes_card{
+    width: 50%;
+    height: fit-content;
+  }
+  .contenedor_acercaNosotros{
+    gap: 5%;
+  }
+  .info_acercaNosotros{
+    width: 40%;
+  }
+  .img_acercaNosotros{
+    width: 750px;
+  }
+  .fondo_lo_que_hacermos{
+    height: 925px;
+  }
+  .container_cards_LoQueHacemos{
+    border: 1px solid rebeccapurple;
+    margin-right: 20%;
+  }
+  .card{
+    width: 25%;
+    height: fit-content;
+  }
+  .card_title{
+    font-size: 20px;
+  }
+  .card_info{
+    font-size: 25px;
+  }
+  .icon img{
+    width: 50px;
+  }
+  .titulo_nav{
+    font-size: 30px;
+  }
 }
 
 /* small Laptop */
