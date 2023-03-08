@@ -827,8 +827,58 @@ textarea {
   .Ref_tes {
     font-size: 40px;
   }
-}
 
+  .containerflex {
+    justify-content: space-around;
+  }
+
+  .container-parrafo {
+    width: 30%;
+    gap: 1px;
+  }
+
+  .parrafo h2 {
+    font-size: 50px;
+  }
+
+  .parrafo p {
+    font-size: 27px;
+  }
+
+  .parrafo h4 {
+    font-size: 27px;
+  }
+  .container-formulario{
+    gap: 10%;
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    border: none;
+    padding: 7%;
+    width: 400px;
+    margin: 7% 0;
+  }
+
+  input[type=text]::placeholder,
+  input[type=email]::placeholder,
+  textarea::placeholder {
+    font-size: 20px;
+  }
+  #Send{
+    width: 460px;
+    padding: 4%;
+  }
+  .imagen-telf img,
+  .imacorreo img{
+    width: 60px;
+  }
+  .tel h4, .mai h4{
+    font-size: 30px;
+  }
+
+}
 
 /* small Laptop */
 @media screen and (max-width: 1250px) {
