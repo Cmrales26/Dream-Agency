@@ -690,9 +690,50 @@ textarea {
 .parrafo a{
   text-decoration: none;
 }
+.creditos{
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 1% 4%;
+  font-size: 16px;
+}
+.derechos{
+  color: #331B3B;
+}
+.derechos span{
+  color: #fdc221;
+  font-weight: 700;
+}
+.autores{
+ display: flex;
+ gap: 20px;
+}
+.autores a{
+  font-weight: 500;
+  text-decoration: none;
+  color: #331B3B;
+}
+.under_autores::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 1px solid #fdc221;
+  width: 30%;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+.under_autores:hover::after {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
 
 /* Media query's NM */
-
 
 /* Pantallas +2k */
 @media screen and (min-width: 2064px) {
@@ -1201,6 +1242,13 @@ textarea {
   .container-formulario {
     grid-column: 1;
   }
+  .creditos{
+    padding: 5% 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-size:20px;
+  }
 }
 
 @media screen and (max-width: 642px) {
@@ -1376,5 +1424,13 @@ textarea {
     width: calc(100%-10px);
     margin: 4% 0;
   }
+  .creditos{
+    font-size: 16px;
+  }
 
+}
+@media screen and (max-width: 321px) {
+  .creditos{
+    font-size: 13px;
+  }
 }
